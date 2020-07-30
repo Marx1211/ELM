@@ -16,20 +16,25 @@ using System.Windows.Shapes;
 namespace ELM
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ELM_Home.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ELM_Home : Window
     {
-        public MainWindow()
+        public ELM_Home()
         {
             InitializeComponent();
         }
-
-        private void endSession_btn_Click(object sender, RoutedEventArgs e)
+        
+        private void manual_btn_Click(object sender, RoutedEventArgs e)
         {
-            SessionEndPopup popupWindow = new SessionEndPopup();
-            popupWindow.Show();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
             this.Close();
+        }
+
+        private void loadFile_btn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

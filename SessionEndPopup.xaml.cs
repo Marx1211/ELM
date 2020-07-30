@@ -10,26 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ELM
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for SessionEndPopup.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SessionEndPopup : Window
     {
-        public MainWindow()
+        public SessionEndPopup()
         {
             InitializeComponent();
         }
 
-        private void endSession_btn_Click(object sender, RoutedEventArgs e)
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            SessionEndPopup popupWindow = new SessionEndPopup();
-            popupWindow.Show();
-            this.Close();
+            ELM_Home home = new ELM_Home();
+            home.Show();
         }
     }
 }
