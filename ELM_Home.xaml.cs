@@ -31,10 +31,5 @@ namespace ELM
             mainWindow.Show();
             this.Close();
         }
-
-        private void loadFile_btn_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
